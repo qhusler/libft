@@ -6,7 +6,7 @@
 /*   By: qhusler <qhusler@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/13 22:31:50 by qhusler           #+#    #+#             */
-/*   Updated: 2016/11/18 21:03:11 by qhusler          ###   ########.fr       */
+/*   Updated: 2016/11/19 13:05:37 by qhusler          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,15 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+
+# define CEND		"\x1b[0m"
+# define CCYAN		"\x1b[38;5;39m"
+# define CRED		"\x1b[38;5;160m"
+# define CYELL		"\x1b[38;5;11m"
+# define CGREEN		"\x1b[38;5;82m"
+# define CBLUE		"\x1b[38;5;19m"
+# define CORANGE	"\x1b[38;5;202m"
+# define CPURPLE	"\x1b[38;5;62m"
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -87,5 +96,9 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstpushback(t_list **alst, t_list *new);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+
+void				ft_putstrc(char *s_color, char *s_print, char *s_end);
+char				*ft_xrotn(char *s, int n);
+char				*ft_xntor(char *s, int n);
 
 #endif
