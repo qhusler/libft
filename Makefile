@@ -6,7 +6,7 @@
 #    By: qhusler <qhusler@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/06 02:00:45 by qhusler           #+#    #+#              #
-#    Updated: 2016/11/18 19:16:44 by qhusler          ###   ########.fr        #
+#    Updated: 2016/11/19 16:08:24 by qhusler          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,11 @@ SRCS = 	ft_putchar.c \
 		ft_lstadd.c \
 		ft_lstpushback.c \
 		ft_lstdelone.c \
-		ft_lstdel.c
+		ft_lstdel.c \
+		ft_lstiter.c \
+		ft_putstrc.c \
+		ft_xrotn.c \
+		ft_xntor.c
 	
 OBJS = $(SRCS:.c=.o)
 all: $(NAME)

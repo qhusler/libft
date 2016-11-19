@@ -6,7 +6,7 @@
 /*   By: qhusler <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 15:33:35 by qhusler           #+#    #+#             */
-/*   Updated: 2016/11/17 17:28:44 by qhusler          ###   ########.fr       */
+/*   Updated: 2016/11/19 20:45:29 by qhusler          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 		return ((char*)big);
 	i = 0;
 	len = ft_strlen(little);
-	while (i < n)
+	while (big[i] && i < n)
 	{
 		if (big[i] == little[0])
 		{

@@ -6,7 +6,7 @@
 /*   By: qhusler <qhusler@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/13 22:31:50 by qhusler           #+#    #+#             */
-/*   Updated: 2016/11/19 13:05:37 by qhusler          ###   ########.fr       */
+/*   Updated: 2016/11/19 16:07:30 by qhusler          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,7 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstpushback(t_list **alst, t_list *new);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 
 void				ft_putstrc(char *s_color, char *s_print, char *s_end);
 char				*ft_xrotn(char *s, int n);
