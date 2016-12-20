@@ -6,7 +6,7 @@
 /*   By: qhusler <qhusler@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/13 22:31:50 by qhusler           #+#    #+#             */
-/*   Updated: 2016/11/19 16:07:30 by qhusler          ###   ########.fr       */
+/*   Updated: 2016/12/20 14:38:12 by qhusler          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@
 # define CBLUE		"\x1b[38;5;19m"
 # define CORANGE	"\x1b[38;5;202m"
 # define CPURPLE	"\x1b[38;5;62m"
+
+# define BUFF_SIZE	32
+
+int					get_next_line(const int fd, char **line);
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
